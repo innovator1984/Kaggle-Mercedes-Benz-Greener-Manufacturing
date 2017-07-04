@@ -1,0 +1,46 @@
+﻿TODO
+
+EM + Дейкстра
+
+Берем все Y в массив, сортируем, строим матрицу: X – порядковый номер, Y – значение. Честно считаем sqrt(n) кластеров. Добавляем центры как точки. Вводим от них расстояния до всех остальных точек, крому центров других кластеров (по EM алгоритму).
+
+Значение k (expected) число кластеров задано параметром.
+Считаем число связей как sqrt(n) – k. Ровно столько будет шагов.
+После шага слияния новые расстояния до точек от центра = min (от слившихся кластеров)
+
+
+LEVEL1 (по F1, F2 и т д фичам из файла)
+V001_RT2_F1 – SQUARE ROOT2 DIHOTOMIA OF EM CLUSTER + DEIKSTRA
+            ID_IS_1,…
+                         _MAX
+                         _MIN
+                         _MEAN
+                         _Q1
+                         _Q2 (MEDIANA)
+                         _Q3
+V001_RT2_F2
+V001_RT3_F1 (expected = root3(n))
+V001_RT3_F2
+V001_RT4_F1
+V001_RT4_F2
+...
+V001_CLU1_RT2_ID_IS_1 (по Y дихотомия, далее алгоритм EM для близнецов по X)
+...
+V001_XGB_W_O_CLU1_RT2 (учимся без точек CLU1 и кроссвалидация без них)
+V001_LASSO_W_O_CLU1_RT2
+V001_RIDGED_W_O_CLU1_RT2
+                         _IS_ON
+                         _VALUE
+                         _SCORE
+
+LEVEL2
+Deep LEARNING REMOVE USELESS ALL V_RT
+                             + SOME LASSO, XGB, RIDGED
+
+LEVEL3 LINEAR REGRESSION
+BY XGB, LASSO, RIDGED 
+
+В конце FILTER BOX with MUSTAGE – выбросы заменяем на граничные значения.
+
+Успехов!
+                              
