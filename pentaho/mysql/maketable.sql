@@ -1,0 +1,9 @@
+CREATE TABLE `out` (
+	name VARCHAR(7) NOT NULL, 
+	time VARCHAR(20) NOT NULL, 
+	`A+0` VARCHAR(13), 
+	`A+1` VARCHAR(13) NOT NULL, 
+	`A+2` VARCHAR(12) NOT NULL, 
+	`meterDescription` VARCHAR(50) NOT NULL, 
+	`meterUUID` VARCHAR(36) NOT NULL
+);
