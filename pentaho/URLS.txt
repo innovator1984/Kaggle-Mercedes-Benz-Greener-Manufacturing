@@ -1,0 +1,2 @@
+file:///home/captain/data-integration/docs/English/welcome/index.html
+http://localhost:8080/pentaho/Home?locale=en_US
